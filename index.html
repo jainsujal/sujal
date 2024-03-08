@@ -7,67 +7,84 @@
     <style>
         body{
             font-family: sans-serif;
-            margin: 0;
-            padding: 0;
         }
         #name{
-            text-align: center;
+            display: flex;
+            justify-content: center;
             color: green;
-            margin-top: 20px;
         }
-        .dine, .select {
-            text-align: center;
-            color: rgb(63, 61, 61);
-            margin-top: 10px;
-        }
+        .dine{text-align: center;}
+        .select{text-align: center; color: rgb(63, 61, 61);}
         
+        Soup.jpg{
+            filter: brightness();
+        }
+
         .category{
             position: relative;
-            width: 80%;
-            max-width: 300px;
+            width: 300px;
             margin: auto;
-            margin-top: 20px;
+            margin-top: 40px;
             text-align: center;
         }
         .category img{
             width: 100%;
-            max-width: 100%;
-            height: auto;
+            height: 100%;
             filter: brightness(0.5);
             border-radius: 30px;
         }
         .category p{
             position: absolute;
-            top: 50%;
+            top: 35%;
             left: 50%;
             transform: translate(-50%,-50%);
-            font-size: 50px;
+            font-size: 36px;
             color: white;
             font-weight: bolder;
-            margin: 0;
-        }
-
-        @media only screen and (max-width: 600px) {
-            #name {
-                font-size: 24px;
-            }
-            .dine, .select {
-                font-size: 18px;
-            }
-            .category p {
-                font-size: 20px;
-            }
         }
     </style>
 </head>
 <body>
-    <h1 id="name">Balaji Pure veg</h1>
+    <h1 id="name" >Balaji Pure veg</h1>
     <h2 class="dine">Dine in Menu</h2>
     <h3 class="select">Select Category</h3>
 
     <div class="category">
-        <img onclick="location.href='a.html'" src="Soup.jpg" alt="Soup">
+        <img onclick="location.href='a.html'" src="Soup.jpg" alt="" srcset="">
         <p>Soup</p>    
+        </div>
+
+        <div class="category">
+            <img onclick="location.href='a.html'" src="Starters.jpg" alt="">
+            <p>Starters</p>
+        </div> 
+        
+        <div class="category">
+            <img onclick="location.href='a.html'" src="Pizza.jpg" alt="">
+            <p>Pizza</p>
+        </div>   
+
+        <div class="category">
+            <img onclick="location.href='a.html'" src="Main Course.jpg" alt="">
+            <p>Main Course</p>
+        </div>   
+
+        <div class="category">
+            <img onclick="location.href='a.html'" src="Rice.jpg" alt="">
+            <p>Rice</p>
+        </div>   
+
+        <div class="category">
+            <img onclick="location.href='a.html'" src="Dal.jpg" alt="">
+            <p>Dal</p>
+        </div>   
+
+        <div class="category">
+            <img onclick="location.href='a.html'" src="Desserts.jpg" alt="">
+            <p>Desserts</p>
+        </div>   
+    
+    
     </div>
 </body>
 </html>
